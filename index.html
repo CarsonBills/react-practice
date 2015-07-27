@@ -10,18 +10,30 @@
 <body>
 	<script type="text/jsx">
 
+		// var App = React.createClass({
+		// 	render:function(){
+		// 		return (
+		// 			<div>
+		// 				<b>BOLD</b>
+		// 				<h1>Hello World</h1>
+		// 			</div>
+		// 		)
+		// 	}
+		// });
+
+		// React.render(<App />, document.body);
+
+
 		var App = React.createClass({
-			render:function(){
+			render: function(){
 				return (
-					<div>
-						<b>BOLD</b>
-						<h1>Hello World</h1>
-					</div>
-				)
+					<div> Hello, {this.props.name}!</div>
+				);
 			}
 		});
 
-		React.render(<App />, document.body);
+		React.render(<App name= "Carson B"/>, document.body);
+
 
 	</script>
 </body>
